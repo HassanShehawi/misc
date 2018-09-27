@@ -46,7 +46,7 @@ def weib_calc_uni(st=1,beg=3,end=25,shape=2,scal=7.5,nwang=3,rep=3,wdirprob=[0.5
     for x in range(0, len(probs)):
         print(pwdir[x])
      
-    Nr_speed=[1/rep]*len(probs)
+    Nr_speed=[1.0/rep]*len(probs)
      
     P=[pdlc]*len(probs)
     
@@ -101,7 +101,7 @@ def weib_calc_mixd(stfst=1,strang=[3,12,13,25],shape=2,scal=7.5,nwang=3,rep=3,wd
         for cnt1 in range(0,nwang):
             pwdir.append(temp[cnt1])
             
-    Nr_speed=[1/rep]*len(probs)
+    Nr_speed=[1.0/rep]*len(probs)
      
     P=[pdlc]*len(probs)
     
