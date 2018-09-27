@@ -11,6 +11,13 @@ for ii=1:length(str1)
 end
 str3=str3';
 
-
+%% second manipulation
+str1=[string('RotTorq'),string('LSShftFxa'),string('RotPwr'),string('RootFzc1'),string('RootMxb1'),string('RootMyb1'),string('LSShftMxa'),string('LSSGagMya'),string('LSSGagMza'),string('TwrBsMxt'),string('TwrBsMyt'),string('TwrBsMxt'),string('TwrBsMyt'),string('YawBrFzn'),string('YawBrFxp'),string('YawBrFyp'),string('YawBrMzn'),string('YawBrMxp'),string('YawBrMyp'),string('RootFxb1'),string('RootFyb1'),string('RootMzc1'),string('LSShftFys'),string('LSShftFzs'),string('Q_DrTr'),string('QD_DrTr'),string('LSSTipVxa')];
+str2=[string('(kN-m)'),string('(kN)'),string('(kW)'),string('(kN)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN)'),string('(kN)'),string('(kN)'),string('(kN-m)'),string('(kN-m)'),string('(kN-m)'),string('(kN)'),string('(kN)'),string('(kN-m)'),string('(kN)'),string('(kN)'),string('(rad)'),string('(rad/s)'),string('(rpm)')];
+strsp=string(' ');
+for ii=1:length(str1)
+    str3(ii)=strcat(str1(ii),strsp);
+    str3(ii)=strcat(str3(ii),str2(ii));
+end
 
 
